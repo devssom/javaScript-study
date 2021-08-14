@@ -1,5 +1,16 @@
-// 클래스 가져오기 : document.getElementsByClassName('')
-// 아이디로 가져오기 : document.getElementById('')
+// Fetch the items from the JSON file
+function loadItems() {
+    return fetch('data/data.json')
+    .then(response => console.log(response));
+}
 
-addEventListener()
-document.getElementById("navy-icon").onclick = function() {}
+
+
+
+// main
+loadItems()    // data.json 파일 리턴하기 위해
+.then(items => {   // 전달받은 아이템들을 이용해서
+    displayItems(items);
+    setEventListners(items)
+})
+.catch(console.log)
