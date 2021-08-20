@@ -9,19 +9,27 @@
     <link rel="stylesheet" href="index.css" </head>
 
 <body>
-    <div class="hello">
+    <form class="hidden" id="login-form">
+        <input 
+            required
+            maxlength="15"
+            type="text"
+            placeholder="넌 누구냐?"
+        />
+        <input type="submit" value="Log In" />
+    </form>
+    <h1 id="greeting" class="hidden">Hello!</h1>
+    <script src="app.js"></script>
+
+    <!-- <div class="Hello">
         <h1 class="sexy-font">Hello!</h1>
     </div>
     <div class="js-clock">
         <h1>00:00</h1>
     </div>
-    <form class="js-form form">
-        <input type="text" placeholder="넌 누구냐?" />
-    </form>
     <h4 class="js-greetings greetings"></h4>
-    <script src="app.js"></script>
     <script src="clock.js"></script>
-    <script src="greeting.js"></script>
+    <script src="greeting.js"></script> -->
 
 </body>
 

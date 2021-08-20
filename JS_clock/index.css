@@ -1,31 +1,35 @@
 * {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 body {
-    color: #000000;
-    background-color: beige;
+  color: #000000;
+  background-color: beige;
 }
 
 h1 {
-    color: cornflowerblue;
+  color: cornflowerblue;
 }
 
 .clicked {
-    color: tomato;
+  color: tomato;
 }
 
 .js-clock {
-    cursor: pointer;
-    font-size: 48px;
-    color: #0d47a1;
+  cursor: pointer;
+  font-size: 48px;
+  color: #0d47a1;
 }
 
-.form,
+/* .form,
 .greetings {
     display: none;
-}
+} */
 
 .showing {
-    display: block;
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
