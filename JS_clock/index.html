@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Momentum App</title>
-    <link rel="stylesheet" href="index.css" </head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
-    <form class="hidden" id="login-form">
+    <form class="hidden"id="login-form">
         <input 
             required
             maxlength="15"
@@ -18,18 +19,27 @@
         />
         <input type="submit" value="Log In" />
     </form>
-    <h1 id="greeting" class="hidden">Hello!</h1>
-    <script src="app.js"></script>
+    <h1 id="clock">00:00</h1>
+    <h2 id="greeting" class="hidden">Hello!</h2>
+    <form id="todo-form">
+        <input type="text" placeholder="할 일 입력하기" required>
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quote">
+        <span></span></br>
+        <span></span>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
 
-    <!-- <div class="Hello">
-        <h1 class="sexy-font">Hello!</h1>
-    </div>
-    <div class="js-clock">
-        <h1>00:00</h1>
-    </div>
-    <h4 class="js-greetings greetings"></h4>
-    <script src="clock.js"></script>
-    <script src="greeting.js"></script> -->
 
 </body>
 

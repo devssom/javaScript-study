@@ -21,7 +21,6 @@ function onLoginSubmit(event) {
     
     loginForm.classList.add(HIDDEN_CLASSNAME);
     // css에서 정의한 hidden class를 추가해주면, 로그인했을 때 form이 사라지게 됨 
-    
     const username = loginInput.value;
     localStorage.setItem(USERNAME_KEY, username);
     // localStrage에 username 을 받아서 저장하기
@@ -33,7 +32,6 @@ function paintGreetings(username) {
     greeting.classList.remove(HIDDEN_CLASSNAME);
     // greeting을 숨김 표시했던 hidden class를 없애서 화면에 보여줌
 }
-
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
